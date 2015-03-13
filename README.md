@@ -1,3 +1,3 @@
-# Wallet
+# TDD Wallet
 
 Working with TDD for XCode
