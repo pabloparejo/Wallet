@@ -11,7 +11,8 @@
 		C58FA39F1AB353170095E1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA39E1AB353170095E1AB /* AppDelegate.m */; };
 		C58FA3A11AB353170095E1AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58FA3A01AB353170095E1AB /* Images.xcassets */; };
 		C58FA3A41AB353170095E1AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58FA3A21AB353170095E1AB /* LaunchScreen.xib */; };
-		C58FA3B01AB353170095E1AB /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA3AF1AB353170095E1AB /* WalletTests.m */; };
+		C58FA3BA1AB354A30095E1AB /* PAREuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA3B91AB354A30095E1AB /* PAREuroTest.m */; };
+		C58FA3BD1AB355900095E1AB /* PAREuro.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA3BC1AB355900095E1AB /* PAREuro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,9 @@
 		C58FA3A31AB353170095E1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C58FA3A91AB353170095E1AB /* WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58FA3AE1AB353170095E1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C58FA3AF1AB353170095E1AB /* WalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTests.m; sourceTree = "<group>"; };
+		C58FA3B91AB354A30095E1AB /* PAREuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAREuroTest.m; sourceTree = "<group>"; };
+		C58FA3BB1AB355900095E1AB /* PAREuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAREuro.h; sourceTree = "<group>"; };
+		C58FA3BC1AB355900095E1AB /* PAREuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAREuro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 			children = (
 				C58FA39D1AB353170095E1AB /* AppDelegate.h */,
 				C58FA39E1AB353170095E1AB /* AppDelegate.m */,
+				C58FA3BE1AB355930095E1AB /* Model */,
 				C58FA3A01AB353170095E1AB /* Images.xcassets */,
 				C58FA3A21AB353170095E1AB /* LaunchScreen.xib */,
 				C58FA3991AB353170095E1AB /* Supporting Files */,
@@ -97,8 +101,8 @@
 		C58FA3AC1AB353170095E1AB /* WalletTests */ = {
 			isa = PBXGroup;
 			children = (
-				C58FA3AF1AB353170095E1AB /* WalletTests.m */,
 				C58FA3AD1AB353170095E1AB /* Supporting Files */,
+				C58FA3B91AB354A30095E1AB /* PAREuroTest.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -109,6 +113,15 @@
 				C58FA3AE1AB353170095E1AB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C58FA3BE1AB355930095E1AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C58FA3BB1AB355900095E1AB /* PAREuro.h */,
+				C58FA3BC1AB355900095E1AB /* PAREuro.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58FA39F1AB353170095E1AB /* AppDelegate.m in Sources */,
+				C58FA3BD1AB355900095E1AB /* PAREuro.m in Sources */,
 				C58FA39C1AB353170095E1AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C58FA3B01AB353170095E1AB /* WalletTests.m in Sources */,
+				C58FA3BA1AB354A30095E1AB /* PAREuroTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
