@@ -22,11 +22,19 @@
     PARMoney *result = [[PARMoney alloc] initWithAmount:self.amount * multiplier
                                                currency:self.currency];
 
-    return [[PARMoney alloc] initWithAmount:(self.amount * multiplier) currency:self.currency ];
+    return result;
 }
 
 -(BOOL) isEqual:(id)object{
-    return (self.amount == [object amount]);
+    return  (self.amount == [object amount]) &&
+            ([self.currency isEqualToString:[object currency]]);
+}
+
+-(PARMoney *) plus:(PARMoney *) augend{
+    PARMoney *result = [[PARMoney alloc]
+                        initWithAmount:(self.amount + [augend amount])
+                        currency:self.currency];
+    return result;
 }
 
 @end

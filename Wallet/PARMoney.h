@@ -15,5 +15,6 @@
 
 -(id) initWithAmount:(NSUInteger) amount currency:(NSString *) currency;
 -(PARMoney *) times:(NSUInteger) multiplier;
+-(PARMoney *) plus:(PARMoney *) augend;
 
 @end

@@ -31,6 +31,18 @@
     PARMoney *ten = [[PARMoney alloc] initWithAmount:10 currency:@"EUR"];
     
     XCTAssertEqualObjects(product, ten, @"Objects with amount 10 and 10 should be equal");
+    
+    PARMoney *tenDollars = [[PARMoney alloc] initWithAmount:10 currency:@"USD"];
+    XCTAssertNotEqualObjects(product, tenDollars, @"Objects with different currency, should not be equal");
+}
+
+-(void) testSimpleSume{
+    PARMoney *seven = [[PARMoney alloc] initWithAmount:7 currency:@"EUR"];
+    PARMoney *eight = [[PARMoney alloc] initWithAmount:8 currency:@"EUR"];
+    
+    PARMoney *result = [[PARMoney alloc] initWithAmount:10 currency:@"EUR"];
+    
+    XCTAssertEqual([seven plus:eight], result, @"€7 + €8 should be 15");
 }
 
 
