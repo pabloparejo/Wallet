@@ -13,6 +13,6 @@
 @property (nonatomic) NSUInteger amount;
 
 -(id) initWithAmount:(NSUInteger) amount;
--(void) times:(NSUInteger) multiplier;
+-(PAREuro *) times:(NSUInteger) multiplier;
 
 @end

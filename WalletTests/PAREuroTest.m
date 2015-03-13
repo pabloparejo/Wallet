@@ -28,8 +28,12 @@
 
 -(void) testMultiplation{
     PAREuro *five = [[PAREuro alloc] initWithAmount:5];
-    [five times:2];
-    XCTAssertEqual(10, five.amount, @"€5 * 2 should be €10");
+    PAREuro *product = [five times:2];
+    XCTAssertEqual(10, product.amount, @"€5 * 2 should be €10");
+
+    product = [five times:3];
+    XCTAssertEqual(15, product.amount, @"€5 * 3 should be €15");
+    
 }
 
 @end

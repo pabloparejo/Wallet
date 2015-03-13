@@ -16,8 +16,8 @@
     }
     return self;
 }
--(void) times:(NSUInteger) multiplier{
-    self.amount = self.amount * multiplier;
+-(PAREuro *) times:(NSUInteger) multiplier{
+    return [[PAREuro alloc] initWithAmount:self.amount * multiplier];
 }
 
 @end
