@@ -14,5 +14,4 @@
 
 -(id) initWithAmount:(NSUInteger) amount;
 -(PAREuro *) times:(NSUInteger) multiplier;
-
 @end

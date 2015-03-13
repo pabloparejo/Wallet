@@ -20,4 +20,7 @@
     return [[PAREuro alloc] initWithAmount:self.amount * multiplier];
 }
 
+-(BOOL) isEqual:(id)object{
+    return (self.amount == [object amount]);
+}
 @end

@@ -33,7 +33,14 @@
 
     product = [five times:3];
     XCTAssertEqual(15, product.amount, @"€5 * 3 should be €15");
+}
+
+-(void) testEquality{
+    PAREuro *five = [[PAREuro alloc] initWithAmount:5];
+    PAREuro *product = [five times:2];
+    PAREuro *ten = [[PAREuro alloc] initWithAmount:10];
     
+    XCTAssertEqualObjects(product, ten, @"Objects with amount %lu and %lu should be equal", (unsigned long)product.amount, ten.amount);
 }
 
 @end
