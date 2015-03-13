@@ -7,7 +7,14 @@
 //
 
 #import "PARMoney.h"
-
+#import "NSObject+GNUstepBase.h"
 @implementation PARMoney
 
+-(id) initWithAmount:(NSUInteger)amount{
+    return [self subclassResponsibility:_cmd];
+}
+
+-(PARMoney *) times:(NSUInteger)multiplier{
+    return [self subclassResponsibility:_cmd];
+}
 @end

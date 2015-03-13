@@ -16,6 +16,8 @@
 		C58FA3C01AB35FC00095E1AB /* PARDollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA3BF1AB35FC00095E1AB /* PARDollarTest.m */; };
 		C58FA3C31AB360480095E1AB /* PARDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA3C21AB360480095E1AB /* PARDollar.m */; };
 		C58FA3C61AB361DF0095E1AB /* PARMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA3C51AB361DF0095E1AB /* PARMoney.m */; };
+		C58FA3C91AB363D70095E1AB /* NSObject+GNUstepBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA3C81AB363D70095E1AB /* NSObject+GNUstepBase.m */; };
+		C58FA3CC1AB365910095E1AB /* PARMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA3CB1AB365910095E1AB /* PARMoneyTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		C58FA3C21AB360480095E1AB /* PARDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARDollar.m; sourceTree = "<group>"; };
 		C58FA3C41AB361DF0095E1AB /* PARMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARMoney.h; sourceTree = "<group>"; };
 		C58FA3C51AB361DF0095E1AB /* PARMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARMoney.m; sourceTree = "<group>"; };
+		C58FA3C71AB363D70095E1AB /* NSObject+GNUstepBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUstepBase.h"; sourceTree = "<group>"; };
+		C58FA3C81AB363D70095E1AB /* NSObject+GNUstepBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUstepBase.m"; sourceTree = "<group>"; };
+		C58FA3CB1AB365910095E1AB /* PARMoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARMoneyTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,7 @@
 			children = (
 				C58FA39D1AB353170095E1AB /* AppDelegate.h */,
 				C58FA39E1AB353170095E1AB /* AppDelegate.m */,
+				C58FA3CA1AB363DC0095E1AB /* Categories */,
 				C58FA3BE1AB355930095E1AB /* Model */,
 				C58FA3A01AB353170095E1AB /* Images.xcassets */,
 				C58FA3A21AB353170095E1AB /* LaunchScreen.xib */,
@@ -112,6 +118,7 @@
 				C58FA3AD1AB353170095E1AB /* Supporting Files */,
 				C58FA3B91AB354A30095E1AB /* PAREuroTest.m */,
 				C58FA3BF1AB35FC00095E1AB /* PARDollarTest.m */,
+				C58FA3CB1AB365910095E1AB /* PARMoneyTest.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -135,6 +142,16 @@
 				C58FA3C51AB361DF0095E1AB /* PARMoney.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C58FA3CA1AB363DC0095E1AB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C58FA3C71AB363D70095E1AB /* NSObject+GNUstepBase.h */,
+				C58FA3C81AB363D70095E1AB /* NSObject+GNUstepBase.m */,
+			);
+			name = Categories;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +258,7 @@
 				C58FA39C1AB353170095E1AB /* main.m in Sources */,
 				C58FA3C31AB360480095E1AB /* PARDollar.m in Sources */,
 				C58FA3C61AB361DF0095E1AB /* PARMoney.m in Sources */,
+				C58FA3C91AB363D70095E1AB /* NSObject+GNUstepBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +268,7 @@
 			files = (
 				C58FA3BA1AB354A30095E1AB /* PAREuroTest.m in Sources */,
 				C58FA3C01AB35FC00095E1AB /* PARDollarTest.m in Sources */,
+				C58FA3CC1AB365910095E1AB /* PARMoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
