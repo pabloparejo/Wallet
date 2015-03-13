@@ -22,7 +22,8 @@
 
 
 - (void)testThatTimesRaisesException{
-    XCTAssertThrows([[[PARMoney alloc] initWithAmount:5] times:2], @"This method is a subclass responsibility");
+    // We could test allocWithZone in order to be a psyco
+    XCTAssertThrows([[[PARMoney alloc] init] times:2], @"This method is a subclass responsibility");
 }
 
 
