@@ -16,17 +16,22 @@
 
 @implementation PARMoneyTest
 
-- (void)testThatInitRaisesException{
-    XCTAssertThrows([[PARMoney alloc] initWithAmount:5], @"This method is a subclass responsibility");
+
+-(void) testMultiplation{
+    PARMoney *five = [[PARMoney alloc] initWithAmount:5 currency:@"EUR"];
+    PARMoney *ten = [five times:2];
+    XCTAssertEqualObjects(ten, [five times:2], @"€5 * 2 should be €10");
+    
+    XCTAssertEqualObjects([ten times:2], [five times:4], @"€10 * 2 should be €5*4");
 }
 
-
-- (void)testThatTimesRaisesException{
-    // We could test allocWithZone in order to be a psyco
-    XCTAssertThrows([[[PARMoney alloc] init] times:2], @"This method is a subclass responsibility");
+-(void) testEquality{
+    PARMoney *five = [[PARMoney alloc] initWithAmount:5 currency:@"EUR"];
+    PARMoney *product = [five times:2];
+    PARMoney *ten = [[PARMoney alloc] initWithAmount:10 currency:@"EUR"];
+    
+    XCTAssertEqualObjects(product, ten, @"Objects with amount 10 and 10 should be equal");
 }
-
-
 
 
 @end

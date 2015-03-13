@@ -7,14 +7,26 @@
 //
 
 #import "PARMoney.h"
-#import "NSObject+GNUstepBase.h"
+
 @implementation PARMoney
 
--(id) initWithAmount:(NSUInteger)amount{
-    return [self subclassResponsibility:_cmd];
+-(id) initWithAmount:(NSUInteger)amount currency:(NSString *)currency{
+    if (self = [super init]) {
+        _amount = amount;
+        _currency = currency;
+    }
+    return self;
 }
 
 -(PARMoney *) times:(NSUInteger)multiplier{
-    return [self subclassResponsibility:_cmd];
+    PARMoney *result = [[PARMoney alloc] initWithAmount:self.amount * multiplier
+                                               currency:self.currency];
+
+    return [[PARMoney alloc] initWithAmount:(self.amount * multiplier) currency:self.currency ];
 }
+
+-(BOOL) isEqual:(id)object{
+    return (self.amount == [object amount]);
+}
+
 @end

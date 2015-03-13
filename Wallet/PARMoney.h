@@ -10,7 +10,10 @@
 
 @interface PARMoney : NSObject
 
--(id) initWithAmount:(NSUInteger) amount;
+@property (nonatomic, readonly) NSUInteger amount;
+@property (nonatomic, readonly) NSString *currency;
+
+-(id) initWithAmount:(NSUInteger) amount currency:(NSString *) currency;
 -(PARMoney *) times:(NSUInteger) multiplier;
 
 @end
