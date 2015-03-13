@@ -10,8 +10,6 @@
 
 @interface PAREuro : NSObject
 
-@property (nonatomic) NSUInteger amount;
-
 -(id) initWithAmount:(NSUInteger) amount;
 -(PAREuro *) times:(NSUInteger) multiplier;
 @end

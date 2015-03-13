@@ -8,6 +8,12 @@
 
 #import "PAREuro.h"
 
+@interface PAREuro()
+
+@property (nonatomic) NSUInteger amount;
+
+@end
+
 @implementation PAREuro
 
 -(id) initWithAmount:(NSUInteger) amount{
