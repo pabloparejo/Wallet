@@ -1,20 +1,20 @@
 //
-//  PAREuro.m
+//  PARDollar.m
 //  Wallet
 //
 //  Created by Pablo Parejo Camacho on 13/3/15.
 //  Copyright (c) 2015 Pablo Parejo Camacho. All rights reserved.
 //
 
-#import "PAREuro.h"
+#import "PARDollar.h"
 
-@interface PAREuro()
+@interface PARDollar()
 
 @property (nonatomic) NSUInteger amount;
 
 @end
 
-@implementation PAREuro
+@implementation PARDollar
 
 -(id) initWithAmount:(NSUInteger) amount{
     if (self = [super init]) {
@@ -23,7 +23,7 @@
     return self;
 }
 -(PARMoney *) times:(NSUInteger) multiplier{
-    return [[PAREuro alloc] initWithAmount:self.amount * multiplier];
+    return [[PARDollar alloc] initWithAmount:self.amount * multiplier];
 }
 
 -(BOOL) isEqual:(id)object{

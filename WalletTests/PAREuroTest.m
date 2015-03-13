@@ -28,7 +28,7 @@
 
 -(void) testMultiplation{
     PAREuro *five = [[PAREuro alloc] initWithAmount:5];
-    PAREuro *ten = [five times:2];
+    PARMoney *ten = [five times:2];
     XCTAssertEqualObjects(ten, [five times:2], @"€5 * 2 should be €10");
 
     XCTAssertEqualObjects([ten times:2], [five times:4], @"€10 * 2 should be €5*4");
@@ -36,7 +36,7 @@
 
 -(void) testEquality{
     PAREuro *five = [[PAREuro alloc] initWithAmount:5];
-    PAREuro *product = [five times:2];
+    PARMoney *product = [five times:2];
     PAREuro *ten = [[PAREuro alloc] initWithAmount:10];
     
     XCTAssertEqualObjects(product, ten, @"Objects with amount 10 and 10 should be equal");

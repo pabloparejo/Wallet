@@ -1,5 +1,5 @@
 //
-//  PAREuro.h
+//  PARDollar.h
 //  Wallet
 //
 //  Created by Pablo Parejo Camacho on 13/3/15.
@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "PARMoney.h"
 
-@interface PAREuro : PARMoney
+@interface PARDollar : PARMoney
 
 @end
