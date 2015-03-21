@@ -10,4 +10,8 @@
 
 @interface PARTestViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *outputLabel;
+
+- (IBAction)copyText:(id)sender;
+
 @end

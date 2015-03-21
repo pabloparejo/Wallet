@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "PARTestViewController.h"
 
 @interface PARTestVCTest : XCTestCase
 
@@ -25,16 +26,20 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
+-(void) testThatTextIsCopiedToLabel{
+    // Environment
+    UIButton *fakeButton = [[UIButton alloc] init];
+    fakeButton.titleLabel.text = @"Hello!";
+    
+    UILabel *fakeLabel = [[UILabel alloc] init];
+    
+    // SUT
+    PARTestViewController *sut = [[PARTestViewController alloc] initWithNibName:nil bundle:nil];
+    sut.outputLabel = fakeLabel;
+    [sut copyText:fakeButton];
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+    // Assertion
+    XCTAssertEqualObjects(fakeButton.titleLabel.text, sut.outputLabel.text);
 }
 
 @end

@@ -10,6 +10,9 @@
 		C51C01E01ABD6B1B00971D38 /* PARBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = C51C01DF1ABD6B1B00971D38 /* PARBroker.m */; };
 		C51C01E21ABD6D5600971D38 /* PARBrokerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C51C01E11ABD6D5600971D38 /* PARBrokerTest.m */; };
 		C51C01E51ABD846200971D38 /* PARWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = C51C01E41ABD846200971D38 /* PARWallet.m */; };
+		C51C01EC1ABD8D5600971D38 /* PARTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C51C01EA1ABD8D5600971D38 /* PARTestViewController.m */; };
+		C51C01ED1ABD8D5600971D38 /* PARTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C51C01EB1ABD8D5600971D38 /* PARTestViewController.xib */; };
+		C51C01F01ABD8E1E00971D38 /* PARTestVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C51C01EF1ABD8E1E00971D38 /* PARTestVCTest.m */; };
 		C58FA39C1AB353170095E1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA39B1AB353170095E1AB /* main.m */; };
 		C58FA39F1AB353170095E1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA39E1AB353170095E1AB /* AppDelegate.m */; };
 		C58FA3A11AB353170095E1AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58FA3A01AB353170095E1AB /* Images.xcassets */; };
@@ -35,6 +38,10 @@
 		C51C01E11ABD6D5600971D38 /* PARBrokerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARBrokerTest.m; sourceTree = "<group>"; };
 		C51C01E31ABD846200971D38 /* PARWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARWallet.h; sourceTree = "<group>"; };
 		C51C01E41ABD846200971D38 /* PARWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARWallet.m; sourceTree = "<group>"; };
+		C51C01E91ABD8D5600971D38 /* PARTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARTestViewController.h; sourceTree = "<group>"; };
+		C51C01EA1ABD8D5600971D38 /* PARTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARTestViewController.m; sourceTree = "<group>"; };
+		C51C01EB1ABD8D5600971D38 /* PARTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PARTestViewController.xib; sourceTree = "<group>"; };
+		C51C01EF1ABD8E1E00971D38 /* PARTestVCTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARTestVCTest.m; sourceTree = "<group>"; };
 		C58FA3961AB353170095E1AB /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58FA39A1AB353170095E1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C58FA39B1AB353170095E1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C51C01EE1ABD8D5B00971D38 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C51C01E91ABD8D5600971D38 /* PARTestViewController.h */,
+				C51C01EA1ABD8D5600971D38 /* PARTestViewController.m */,
+				C51C01EB1ABD8D5600971D38 /* PARTestViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		C58FA38D1AB353170095E1AB = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +109,7 @@
 			children = (
 				C58FA39D1AB353170095E1AB /* AppDelegate.h */,
 				C58FA39E1AB353170095E1AB /* AppDelegate.m */,
+				C51C01EE1ABD8D5B00971D38 /* Controllers */,
 				C58FA3CA1AB363DC0095E1AB /* Categories */,
 				C58FA3BE1AB355930095E1AB /* Model */,
 				C58FA3A01AB353170095E1AB /* Images.xcassets */,
@@ -116,6 +134,7 @@
 				C58FA3AD1AB353170095E1AB /* Supporting Files */,
 				C58FA3CB1AB365910095E1AB /* PARMoneyTest.m */,
 				C51C01E11ABD6D5600971D38 /* PARBrokerTest.m */,
+				C51C01EF1ABD8E1E00971D38 /* PARTestVCTest.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -232,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58FA3A41AB353170095E1AB /* LaunchScreen.xib in Resources */,
+				C51C01ED1ABD8D5600971D38 /* PARTestViewController.xib in Resources */,
 				C58FA3A11AB353170095E1AB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51C01EC1ABD8D5600971D38 /* PARTestViewController.m in Sources */,
 				C58FA39F1AB353170095E1AB /* AppDelegate.m in Sources */,
 				C58FA39C1AB353170095E1AB /* main.m in Sources */,
 				C58FA3C61AB361DF0095E1AB /* PARMoney.m in Sources */,
@@ -264,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C51C01E21ABD6D5600971D38 /* PARBrokerTest.m in Sources */,
+				C51C01F01ABD8E1E00971D38 /* PARTestVCTest.m in Sources */,
 				C58FA3CC1AB365910095E1AB /* PARMoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
