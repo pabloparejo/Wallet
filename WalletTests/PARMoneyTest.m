@@ -9,6 +9,7 @@
 @import UIKit;
 @import XCTest;
 #import "PARMoney.h"
+#import "PARBroker.h"
 
 @interface PARMoneyTest : XCTestCase
 
@@ -46,6 +47,24 @@
 
     XCTAssertEqualObjects([seven plus:eight], result, @"€7 + €8 should be 15");
 
+}
+
+-(void) testReduction{
+    // 10€ = 20$, 1:2
+    
+    //New broker
+    PARBroker *broker = [[PARBroker alloc] init];
+    [broker addRate:2 fromCurrency:@"EUR" toCurrency:@"USD"];
+    
+    
+    PARMoney *tenEUR = [[PARMoney alloc] initWithAmount:10
+                                               currency:@"EUR"];
+    
+    PARMoney *twentyUSD = [[PARMoney alloc] initWithAmount:20
+                                               currency:@"USD"];
+    
+    XCTAssertEqualObjects([tenEUR reduceToCurrency:@"USD" withBroker:broker], twentyUSD, @"10€ should be 20$");
+    
 }
 
 

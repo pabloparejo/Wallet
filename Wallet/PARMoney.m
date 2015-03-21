@@ -7,6 +7,7 @@
 //
 
 #import "PARMoney.h"
+#import "PARBroker.h"
 
 @implementation PARMoney
 
@@ -35,6 +36,15 @@
                         initWithAmount:(self.amount + [augend amount])
                         currency:self.currency];
     return result;
+}
+
+-(PARMoney *) reduceToCurrency:(NSString *) toCurrency withBroker:(PARBroker *)broker{
+    
+    // Pedir al broker una nueva tasa de conversión a mi destino
+    // Calcular el valor
+    // Crear nueva instancia con la divisa destino
+    
+    return self;
 }
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C51C01E01ABD6B1B00971D38 /* PARBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = C51C01DF1ABD6B1B00971D38 /* PARBroker.m */; };
+		C51C01E21ABD6D5600971D38 /* PARBrokerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C51C01E11ABD6D5600971D38 /* PARBrokerTest.m */; };
 		C58FA39C1AB353170095E1AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA39B1AB353170095E1AB /* main.m */; };
 		C58FA39F1AB353170095E1AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FA39E1AB353170095E1AB /* AppDelegate.m */; };
 		C58FA3A11AB353170095E1AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58FA3A01AB353170095E1AB /* Images.xcassets */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C51C01DE1ABD6B1B00971D38 /* PARBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARBroker.h; sourceTree = "<group>"; };
+		C51C01DF1ABD6B1B00971D38 /* PARBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARBroker.m; sourceTree = "<group>"; };
+		C51C01E11ABD6D5600971D38 /* PARBrokerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARBrokerTest.m; sourceTree = "<group>"; };
 		C58FA3961AB353170095E1AB /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58FA39A1AB353170095E1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C58FA39B1AB353170095E1AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +112,7 @@
 			children = (
 				C58FA3AD1AB353170095E1AB /* Supporting Files */,
 				C58FA3CB1AB365910095E1AB /* PARMoneyTest.m */,
+				C51C01E11ABD6D5600971D38 /* PARBrokerTest.m */,
 			);
 			path = WalletTests;
 			sourceTree = "<group>";
@@ -124,6 +130,8 @@
 			children = (
 				C58FA3C41AB361DF0095E1AB /* PARMoney.h */,
 				C58FA3C51AB361DF0095E1AB /* PARMoney.m */,
+				C51C01DE1ABD6B1B00971D38 /* PARBroker.h */,
+				C51C01DF1ABD6B1B00971D38 /* PARBroker.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 				C58FA39F1AB353170095E1AB /* AppDelegate.m in Sources */,
 				C58FA39C1AB353170095E1AB /* main.m in Sources */,
 				C58FA3C61AB361DF0095E1AB /* PARMoney.m in Sources */,
+				C51C01E01ABD6B1B00971D38 /* PARBroker.m in Sources */,
 				C58FA3C91AB363D70095E1AB /* NSObject+GNUstepBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51C01E21ABD6D5600971D38 /* PARBrokerTest.m in Sources */,
 				C58FA3CC1AB365910095E1AB /* PARMoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +433,7 @@
 				C58FA3B51AB353170095E1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C58FA3B61AB353170095E1AB /* Build configuration list for PBXNativeTarget "WalletTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +442,7 @@
 				C58FA3B81AB353170095E1AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

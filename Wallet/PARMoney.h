@@ -8,13 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+@class PARBroker;
+
 @interface PARMoney : NSObject
 
 @property (nonatomic, readonly) NSUInteger amount;
 @property (nonatomic, readonly) NSString *currency;
 
+
 -(id) initWithAmount:(NSUInteger) amount currency:(NSString *) currency;
 -(PARMoney *) times:(NSUInteger) multiplier;
 -(PARMoney *) plus:(PARMoney *) augend;
+-(PARMoney *) reduceToCurrency:(NSString *) toCurrency
+                    withBroker:(PARBroker *)broker;
 
 @end
