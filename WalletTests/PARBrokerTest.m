@@ -36,6 +36,11 @@
     XCTAssertEqual(0.5, [self.sut rateFromCurrency:@"EUR" toCurrency:@"USD"]);
 }
 
+- (void) testSelfRate{
+    XCTAssertEqual(1, [self.sut rateFromCurrency:@"EUR" toCurrency:@"EUR"]);
+    XCTAssertEqual(1, [self.sut rateFromCurrency:@"USD" toCurrency:@"USD"]);
+}
+
 - (void)tearDown {
     // This method is called after the invocation of each test method in the class.
     [super tearDown];

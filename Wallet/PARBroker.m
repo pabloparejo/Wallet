@@ -34,6 +34,14 @@
     // Inversa
     [self.rates setObject:@(1.0/rate) forKey:[self keyFromCurrency:toCurrency
                                                     toCurrency:fromCurrency]];
+    
+    // Self
+    [self.rates setObject:@1.0 forKey:[self keyFromCurrency:fromCurrency
+                                                 toCurrency:fromCurrency]];
+
+    [self.rates setObject:@1.0 forKey:[self keyFromCurrency:toCurrency
+                                                        toCurrency:toCurrency]];
+  
 }
 
 -(float) rateFromCurrency:(NSString *)fromCurrency

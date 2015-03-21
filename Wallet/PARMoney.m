@@ -41,10 +41,13 @@
 -(PARMoney *) reduceToCurrency:(NSString *) toCurrency withBroker:(PARBroker *)broker{
     
     // Pedir al broker una nueva tasa de conversión a mi destino
-    // Calcular el valor
-    // Crear nueva instancia con la divisa destino
+    float rate = [broker rateFromCurrency:self.currency toCurrency:toCurrency];
     
-    return self;
+    // Calcular el valor
+    NSUInteger amount = self.amount * rate;
+
+    // Crear nueva instancia con la divisa destino
+    return [[PARMoney alloc] initWithAmount:amount currency:toCurrency];
 }
 
 @end

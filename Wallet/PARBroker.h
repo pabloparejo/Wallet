@@ -10,7 +10,7 @@
 
 @interface PARBroker : NSObject
 
--(void) addRate:(NSInteger) rate
+-(void) addRate:(NSUInteger) rate
    fromCurrency:(NSString *)fromCurrency
      toCurrency:(NSString *)toCurrency;
 
